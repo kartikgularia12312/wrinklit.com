@@ -1,5 +1,5 @@
 -- Run in Supabase: SQL Editor > New query.
-create table public.waitlist_subscribers (
+create table if not exists public.waitlist_subscribers (
   id bigint generated always as identity primary key,
   email text not null unique check (email ~* '^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$'),
   created_at timestamptz not null default now()
