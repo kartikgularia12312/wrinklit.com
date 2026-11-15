@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ed0c18" />
+    <title>Wrinklit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="landing">
+      <section class="waitlist" aria-label="Wrinklit early access">
+        <img class="main-logo" src="assets/wrinklit-logo-transparent.png" alt="Wrinklit" />
+        <p class="coming-soon">Coming Soon</p>
+        <form id="notify-form" novalidate>
+          <label class="sr-only" for="email">Your email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="Your email address" required />
+          <button type="submit" aria-label="Notify me">Notify me <span>↗</span></button>
+        </form>
+      </section>
+    </main>
+    <div class="popup" id="popup" role="status" aria-live="polite" aria-hidden="true">
+      <span class="popup-star">✦</span><p>You’re on the list.</p>
+      <button class="popup-close" type="button" aria-label="Close">×</button>
+    </div>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
