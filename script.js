@@ -15,17 +15,20 @@ form.addEventListener('submit', async (event) => {
   button.textContent = 'One moment…';
   try {
     if (!supabase.url || !supabase.anonKey) throw new Error('Supabase is not configured');
-    const response = await fetch(`${supabase.url}/rest/v1/waitlist_subscribers?on_conflict=email`, {
+    const response = await fetch(`${supabase.url}/rest/v1/waitlist_subscribers`, {
       method:'POST',
       headers:{
         'Content-Type':'application/json',
         apikey:supabase.anonKey,
         Authorization:`Bearer ${supabase.anonKey}`,
-        Prefer:'return=minimal,resolution=ignore-duplicates'
+        Prefer:'return=minimal'
       },
       body:JSON.stringify({email:email.value.trim()})
     });
-    if (!response.ok) throw new Error('Subscription could not be saved');
+    if (!response.ok) {
+      const body = await response.json().catch(() => ({}));
+      if (body.code !== '23505') throw new Error('Subscription could not be saved');
+    }
     email.value = '';
     showPopup();
   } catch (error) { button.textContent = 'Try again'; button.disabled = false; return; }
