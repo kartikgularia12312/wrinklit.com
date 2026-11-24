@@ -1,0 +1,715 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy | Wrinklit</title>
+  <meta name="description" content="Read the Wrinklit Privacy Policy to understand how RailQuick Private Limited collects, uses, protects and manages your personal information.">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --primary: #e53935;
+      --dark: #191919;
+      --muted: #737373;
+      --bg: #fafafa;
+      --white: #ffffff;
+      --border: #eeeeee;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .navbar {
+      height: 75px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8%;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      color: var(--primary);
+    }
+
+    .back-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .hero {
+      background: #fff1f0;
+      padding: 75px 20px 65px;
+      text-align: center;
+    }
+
+    .hero-label {
+      display: inline-block;
+      color: var(--primary);
+      background: white;
+      padding: 7px 17px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 55px);
+      font-weight: 850;
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: auto;
+      color: #666;
+      font-size: 15px;
+    }
+
+    .updated {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 55px auto;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 245px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 23px;
+      position: sticky;
+      top: 25px;
+    }
+
+    .sidebar h3 {
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #666;
+      font-size: 13px;
+      padding: 8px 0;
+      transition: .2s;
+    }
+
+    .sidebar a:hover {
+      color: var(--primary);
+      transform: translateX(3px);
+    }
+
+    .content {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 45px;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: #555;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .policy-section {
+      padding: 29px 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 25px;
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+
+    .policy-section h2 {
+      font-size: 21px;
+      letter-spacing: -.5px;
+      margin-bottom: 13px;
+    }
+
+    .policy-section p {
+      font-size: 14px;
+      color: #606060;
+      margin-bottom: 12px;
+    }
+
+    .policy-section ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
+    .policy-section li {
+      font-size: 14px;
+      color: #606060;
+      margin-bottom: 9px;
+    }
+
+    .highlight {
+      background: #fff4f3;
+      border-left: 3px solid var(--primary);
+      padding: 18px;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-card {
+      background: #191919;
+      color: white;
+      padding: 28px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: #ccc;
+    }
+
+    .contact-card a {
+      color: #ff7772;
+    }
+
+    .footer {
+      background: #191919;
+      color: white;
+      padding: 40px 8%;
+      text-align: center;
+    }
+
+    .footer .logo {
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      color: #aaa;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .footer-links {
+      margin-top: 18px;
+    }
+
+    .footer-links a {
+      color: #ddd;
+      margin: 0 10px;
+      font-size: 13px;
+    }
+
+    @media(max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+        margin: 25px auto;
+        gap: 20px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .sidebar nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 12px;
+      }
+
+      .content {
+        padding: 25px 20px;
+      }
+
+      .navbar {
+        padding: 0 20px;
+      }
+
+      .hero {
+        padding: 55px 20px;
+      }
+    }
+
+    @media print {
+      .navbar, .sidebar, .footer {
+        display: none;
+      }
+
+      .container {
+        display: block;
+        margin: 0;
+      }
+
+      .content {
+        border: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="/" class="logo">wrinklit.</a>
+    <a href="/" class="back-link">← Back to Home</a>
+  </header>
+
+  <section class="hero">
+    <span class="hero-label">YOUR PRIVACY MATTERS</span>
+    <h1>Privacy Policy</h1>
+    <p>
+      Your trust means everything to us. Learn how Wrinklit
+      collects, uses and protects your personal information
+      when you use our services.
+    </p>
+    <div class="updated">
+      Effective Date: 24 November 2026 |
+      Last Updated: 24 November 2026
+    </div>
+  </section>
+
+  <main class="container">
+
+    <aside class="sidebar">
+      <h3>ON THIS PAGE</h3>
+      <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#information">Information We Collect</a>
+        <a href="#usage">How We Use Information</a>
+        <a href="#location">Location Information</a>
+        <a href="#orders">Orders & Payments</a>
+        <a href="#sharing">Information Sharing</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#security">Data Security</a>
+        <a href="#retention">Data Retention</a>
+        <a href="#rights">Your Rights</a>
+        <a href="#children">Children's Privacy</a>
+        <a href="#thirdparty">Third-Party Links</a>
+        <a href="#changes">Policy Changes</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </aside>
+
+    <article class="content">
+
+      <div class="intro">
+        This Privacy Policy explains how Wrinklit, a brand
+        owned and operated by <strong>RailQuick Private Limited</strong>,
+        handles your personal information when you visit our
+        website, use our platform, create an account, book a
+        pickup, or use our ironing and garment-care services.
+
+        By accessing or using Wrinklit, you acknowledge that
+        you have read this policy.
+      </div>
+
+      <section class="policy-section" id="introduction">
+        <h2>01. Introduction</h2>
+        <p>
+          Wrinklit is a technology-enabled garment-care and
+          convenience platform operated by RailQuick Private
+          Limited, a company incorporated under the laws of India.
+        </p>
+        <p>
+          Throughout this policy, the terms "Wrinklit", "we",
+          "our" and "us" refer to RailQuick Private Limited
+          operating under the brand name Wrinklit.
+        </p>
+        <p>
+          We respect your privacy and are committed to handling
+          your personal data responsibly and transparently in
+          accordance with applicable Indian laws, including
+          the Digital Personal Data Protection Act, 2023,
+          and applicable rules.
+        </p>
+      </section>
+
+      <section class="policy-section" id="information">
+        <h2>02. Information We Collect</h2>
+        <p>
+          Depending on how you use our platform, we may collect
+          the following categories of information:
+        </p>
+
+        <ul>
+          <li><strong>Personal details:</strong> Name, mobile number, email address and account information.</li>
+          <li><strong>Address details:</strong> Pickup address, delivery address, apartment, building and landmark information.</li>
+          <li><strong>Order information:</strong> Garment details, service selections, order history, pickup instructions and preferences.</li>
+          <li><strong>Payment information:</strong> Payment status, transaction reference, payment method and billing records.</li>
+          <li><strong>Device information:</strong> IP address, browser type, device type, operating system and technical logs.</li>
+          <li><strong>Location information:</strong> Location data where you permit location access or provide location details.</li>
+          <li><strong>Communication information:</strong> Customer support messages, feedback, complaints and service-related communications.</li>
+        </ul>
+
+        <p>
+          We collect only information reasonably necessary
+          for the purposes explained in this policy, subject
+          to applicable law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="usage">
+        <h2>03. How We Use Your Information</h2>
+        <p>We may use your information for the following purposes:</p>
+
+        <ul>
+          <li>Creating and managing customer accounts.</li>
+          <li>Processing ironing and garment-care bookings.</li>
+          <li>Arranging garment pickup and delivery.</li>
+          <li>Coordinating with service partners and vendors.</li>
+          <li>Sending order confirmations and service updates.</li>
+          <li>Processing payments, refunds and billing.</li>
+          <li>Providing customer support and resolving complaints.</li>
+          <li>Improving our website, technology and user experience.</li>
+          <li>Detecting fraudulent transactions and preventing misuse.</li>
+          <li>Meeting legal, regulatory and accounting obligations.</li>
+          <li>Sending promotional messages where permitted by law and applicable preferences.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="location">
+        <h2>04. Location Information</h2>
+        <p>
+          Wrinklit may use address and location information
+          to identify serviceable areas and coordinate pickup
+          and delivery.
+        </p>
+        <p>
+          If you grant location permission through your device
+          or browser, we may use that information to help
+          identify your location and improve service convenience.
+        </p>
+        <p>
+          You can manage location permissions through your
+          device or browser settings. Some location-dependent
+          features may not work without this permission.
+        </p>
+      </section>
+
+      <section class="policy-section" id="orders">
+        <h2>05. Orders and Payments</h2>
+        <p>
+          When you book a service through Wrinklit, we process
+          the information required to complete your booking.
+        </p>
+        <p>
+          Payments may be facilitated through third-party
+          payment gateway providers such as Razorpay or other
+          providers integrated with our platform.
+        </p>
+        <p>
+          Your payment may be subject to the payment provider's
+          own privacy policy, terms and security procedures.
+        </p>
+        <p>
+          We may receive payment confirmations, transaction
+          references and payment status information to manage
+          your orders and refunds.
+        </p>
+        <p>
+          Full card details, UPI PINs and banking passwords
+          should never be shared with Wrinklit customer support.
+        </p>
+      </section>
+
+      <section class="policy-section" id="sharing">
+        <h2>06. Sharing of Information</h2>
+        <p>
+          We do not sell your personal information to third
+          parties for their independent marketing purposes.
+        </p>
+        <p>We may share relevant information with:</p>
+
+        <ul>
+          <li><strong>Service partners:</strong> Ironing professionals, garment-care vendors and operational partners responsible for fulfilling your booking.</li>
+          <li><strong>Delivery partners:</strong> Individuals or agencies involved in collecting and returning garments.</li>
+          <li><strong>Payment providers:</strong> Payment gateways and financial service providers processing transactions.</li>
+          <li><strong>Technology providers:</strong> Hosting, cloud storage, database, analytics and communication providers supporting our platform.</li>
+          <li><strong>Government authorities:</strong> Where disclosure is required by applicable law or a lawful order.</li>
+          <li><strong>Professional advisers:</strong> Legal, accounting and compliance advisers where reasonably necessary.</li>
+        </ul>
+
+        <p>
+          Information shared with service providers will be
+          limited to what is reasonably required for the
+          relevant purpose, subject to applicable law and
+          appropriate safeguards.
+        </p>
+      </section>
+
+      <section class="policy-section" id="cookies">
+        <h2>07. Cookies and Tracking Technologies</h2>
+        <p>
+          Our website may use cookies and similar technologies
+          to improve functionality and understand website usage.
+        </p>
+
+        <ul>
+          <li>Remembering website preferences.</li>
+          <li>Maintaining session functionality.</li>
+          <li>Understanding website traffic and performance.</li>
+          <li>Improving the overall browsing experience.</li>
+        </ul>
+
+        <p>
+          You can manage or disable cookies through your
+          browser settings. Certain website features may
+          not function correctly if cookies are disabled.
+        </p>
+      </section>
+
+      <section class="policy-section" id="security">
+        <h2>08. Data Security</h2>
+        <p>
+          RailQuick Private Limited takes reasonable technical
+          and organisational measures to protect personal
+          information against unauthorised access, disclosure,
+          alteration, loss or misuse.
+        </p>
+
+        <p>These measures may include:</p>
+
+        <ul>
+          <li>Access controls and authentication mechanisms.</li>
+          <li>Secure communication protocols where supported.</li>
+          <li>Restricted access to operational information.</li>
+          <li>Monitoring and security reviews.</li>
+          <li>Appropriate safeguards with technology providers.</li>
+        </ul>
+
+        <p>
+          However, no online platform or electronic transmission
+          method can guarantee absolute security.
+        </p>
+      </section>
+
+      <section class="policy-section" id="retention">
+        <h2>09. Data Retention</h2>
+        <p>
+          We retain personal information only for as long as
+          reasonably necessary to fulfil the purposes for
+          which it was collected, provide services, resolve
+          disputes and comply with applicable legal obligations.
+        </p>
+        <p>
+          When information is no longer required, we will
+          take appropriate steps to delete or anonymise it,
+          subject to applicable law and legitimate retention
+          requirements.
+        </p>
+      </section>
+
+      <section class="policy-section" id="rights">
+        <h2>10. Your Privacy Rights</h2>
+        <p>
+          Subject to applicable law, you may have the right to:
+        </p>
+
+        <ul>
+          <li>Request information about the personal data we process.</li>
+          <li>Request correction or updating of inaccurate information.</li>
+          <li>Request erasure of personal data where legally permissible.</li>
+          <li>Withdraw consent where processing is based on consent.</li>
+          <li>Raise a grievance regarding the processing of your personal information.</li>
+          <li>Nominate another individual to exercise your rights in accordance with applicable law.</li>
+        </ul>
+
+        <p>
+          You may submit privacy-related requests using the
+          contact information provided in this policy.
+          We may need to verify your identity before processing
+          certain requests.
+        </p>
+
+        <div class="highlight">
+          Withdrawing consent may affect our ability to provide
+          certain services that depend on the relevant
+          information.
+        </div>
+      </section>
+
+      <section class="policy-section" id="children">
+        <h2>11. Children's Privacy</h2>
+        <p>
+          Wrinklit is intended for individuals who are legally
+          capable of entering into the relevant service
+          arrangements.
+        </p>
+        <p>
+          We do not knowingly seek to collect children's
+          personal information in violation of applicable law.
+          Where required, verifiable parental or guardian
+          consent will be obtained before processing children's
+          personal data.
+        </p>
+      </section>
+
+      <section class="policy-section" id="thirdparty">
+        <h2>12. Third-Party Websites and Services</h2>
+        <p>
+          Our website may contain links to external websites,
+          payment platforms or third-party services.
+        </p>
+        <p>
+          Such services operate under their own terms and
+          privacy policies. RailQuick Private Limited is not
+          responsible for the privacy practices of independent
+          third-party websites.
+        </p>
+        <p>
+          We encourage users to review the privacy policies
+          of third-party services before sharing information.
+        </p>
+      </section>
+
+      <section class="policy-section" id="changes">
+        <h2>13. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy periodically to
+          reflect changes in our services, business practices,
+          technology or applicable legal requirements.
+        </p>
+        <p>
+          Any revised version will be published on this page
+          along with its updated effective date.
+        </p>
+        <p>
+          We encourage users to review this page periodically
+          to stay informed about how their information is handled.
+        </p>
+      </section>
+
+      <section class="policy-section" id="contact">
+        <h2>14. Contact and Grievance Redressal</h2>
+        <p>
+          For questions, requests, complaints or concerns
+          regarding this Privacy Policy or the handling of
+          your personal information, please contact us.
+        </p>
+
+        <div class="contact-card">
+          <h3>Wrinklit</h3>
+          <p><strong>Legal Entity:</strong> RailQuick Private Limited</p>
+          <p><strong>Brand:</strong> Wrinklit</p>
+          <p><strong>Country:</strong> India</p>
+          <p><strong>Email:</strong>
+            <a href="mailto:privacy@wrinklit.in">
+              privacy@wrinklit.in
+            </a>
+          </p>
+          <p><strong>Website:</strong>
+            <a href="https://wrinklit.in">
+              www.wrinklit.in
+            </a>
+          </p>
+          <p style="margin-top:12px;font-size:12px;">
+            Please replace the contact details above if your
+            official privacy email or domain is different.
+          </p>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <h2>15. Company Information</h2>
+        <p>
+          Wrinklit is a brand owned and operated by
+          <strong>RailQuick Private Limited</strong>.
+        </p>
+        <p>
+          All services offered under the Wrinklit brand are
+          provided through the business and operational
+          infrastructure of RailQuick Private Limited,
+          subject to the applicable terms and conditions.
+        </p>
+        <p>
+          © <span id="year">2026</span> RailQuick Private Limited.
+          All Rights Reserved.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">wrinklit.</div>
+    <p>Premium garment care, made convenient.</p>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/terms">Terms & Conditions</a>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
+    <p>
+      Owned and Operated by RailQuick Private Limited
+    </p>
+    <p>© <span id="footerYear">2026</span> All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Automatically update copyright year
+    const currentYear = new Date().getFullYear();
+
+    document.getElementById("year").textContent = currentYear;
+    document.getElementById("footerYear").textContent = currentYear;
+
+    // Smooth section navigation
+    document.querySelectorAll('.sidebar a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          history.replaceState(null, '', this.getAttribute('href'));
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
