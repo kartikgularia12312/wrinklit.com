@@ -1,0 +1,1031 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Terms & Conditions | Wrinklit</title>
+  <meta name="description" content="Read the Terms and Conditions governing the use of Wrinklit, owned and operated by RailQuick Private Limited.">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --primary: #e53935;
+      --dark: #191919;
+      --muted: #737373;
+      --bg: #fafafa;
+      --white: #fff;
+      --border: #eee;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .navbar {
+      height: 75px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8%;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      color: var(--primary);
+    }
+
+    .back-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .hero {
+      background: #fff1f0;
+      padding: 75px 20px 65px;
+      text-align: center;
+    }
+
+    .hero-label {
+      display: inline-block;
+      color: var(--primary);
+      background: white;
+      padding: 7px 17px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 55px);
+      font-weight: 850;
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #666;
+      font-size: 15px;
+    }
+
+    .updated {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 55px auto;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 245px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 23px;
+      position: sticky;
+      top: 25px;
+    }
+
+    .sidebar h3 {
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #666;
+      font-size: 13px;
+      padding: 8px 0;
+      transition: .2s;
+    }
+
+    .sidebar a:hover {
+      color: var(--primary);
+      transform: translateX(3px);
+    }
+
+    .content {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 45px;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: #555;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .policy-section {
+      padding: 29px 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 25px;
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+
+    .policy-section h2 {
+      font-size: 21px;
+      letter-spacing: -.5px;
+      margin-bottom: 13px;
+    }
+
+    .policy-section p {
+      font-size: 14px;
+      color: #606060;
+      margin-bottom: 12px;
+    }
+
+    .policy-section ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
+    .policy-section li {
+      font-size: 14px;
+      color: #606060;
+      margin-bottom: 9px;
+    }
+
+    .highlight {
+      background: #fff4f3;
+      border-left: 3px solid var(--primary);
+      padding: 18px;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-card {
+      background: #191919;
+      color: white;
+      padding: 28px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: #ccc;
+    }
+
+    .contact-card a {
+      color: #ff7772;
+    }
+
+    .footer {
+      background: #191919;
+      color: white;
+      padding: 40px 8%;
+      text-align: center;
+    }
+
+    .footer .logo {
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      color: #aaa;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .footer-links {
+      margin-top: 18px;
+    }
+
+    .footer-links a {
+      color: #ddd;
+      margin: 0 10px;
+      font-size: 13px;
+    }
+
+    @media(max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+        margin: 25px auto;
+        gap: 20px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .sidebar nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 12px;
+      }
+
+      .content {
+        padding: 25px 20px;
+      }
+
+      .navbar {
+        padding: 0 20px;
+      }
+
+      .hero {
+        padding: 55px 20px;
+      }
+    }
+
+    @media print {
+      .navbar, .sidebar, .footer {
+        display: none;
+      }
+
+      .container {
+        display: block;
+        margin: 0;
+      }
+
+      .content {
+        border: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="/" class="logo">wrinklit.</a>
+    <a href="/" class="back-link">← Back to Home</a>
+  </header>
+
+  <section class="hero">
+    <span class="hero-label">LEGAL INFORMATION</span>
+    <h1>Terms & Conditions</h1>
+    <p>
+      Simple, transparent and fair terms for using Wrinklit.
+      Please read these terms carefully before booking
+      our garment-care services.
+    </p>
+    <div class="updated">
+      Effective Date: 24 November 2026 |
+      Last Updated: 24 November 2026
+    </div>
+  </section>
+
+  <main class="container">
+
+    <aside class="sidebar">
+      <h3>ON THIS PAGE</h3>
+      <nav>
+        <a href="#acceptance">Acceptance of Terms</a>
+        <a href="#company">About Wrinklit</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#services">Our Services</a>
+        <a href="#account">User Accounts</a>
+        <a href="#booking">Booking & Orders</a>
+        <a href="#pricing">Pricing & Payments</a>
+        <a href="#pickup">Pickup & Delivery</a>
+        <a href="#garments">Garment Responsibility</a>
+        <a href="#cancellation">Cancellation</a>
+        <a href="#refund">Refunds</a>
+        <a href="#customer">Customer Responsibilities</a>
+        <a href="#partners">Service Partners</a>
+        <a href="#prohibited">Prohibited Activities</a>
+        <a href="#ip">Intellectual Property</a>
+        <a href="#liability">Limitation of Liability</a>
+        <a href="#indemnity">Indemnification</a>
+        <a href="#termination">Suspension & Termination</a>
+        <a href="#force">Force Majeure</a>
+        <a href="#law">Governing Law</a>
+        <a href="#changes">Changes to Terms</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </aside>
+
+    <article class="content">
+
+      <div class="intro">
+        Welcome to Wrinklit.
+
+        These Terms & Conditions ("Terms") govern your access
+        to and use of the Wrinklit website, platform and
+        services.
+
+        Wrinklit is a brand owned and operated by
+        <strong>RailQuick Private Limited</strong>, a company
+        incorporated under the laws of India.
+
+        By accessing our website, creating an account or
+        placing an order, you agree to these Terms and
+        applicable policies published on our platform.
+      </div>
+
+      <section class="policy-section" id="acceptance">
+        <h2>01. Acceptance of Terms</h2>
+        <p>
+          By visiting, accessing or using Wrinklit, you confirm
+          that you have read, understood and agreed to these
+          Terms.
+        </p>
+        <p>
+          If you do not agree with any part of these Terms,
+          please discontinue using our website and services.
+        </p>
+        <p>
+          These Terms should be read together with our
+          Privacy Policy and other applicable policies.
+        </p>
+      </section>
+
+      <section class="policy-section" id="company">
+        <h2>02. About Wrinklit</h2>
+        <p>
+          Wrinklit is a technology-enabled garment-care
+          platform that aims to make ironing and garment
+          services convenient through online booking,
+          collection and delivery.
+        </p>
+        <p>
+          <strong>Brand Name:</strong> Wrinklit
+        </p>
+        <p>
+          <strong>Legal Entity:</strong> RailQuick Private Limited
+        </p>
+        <p>
+          <strong>Business Location:</strong> India
+        </p>
+        <p>
+          <strong>Website:</strong> www.wrinklit.in
+        </p>
+        <p>
+          RailQuick Private Limited may operate Wrinklit
+          directly or through authorised service providers,
+          vendors and operational partners.
+        </p>
+      </section>
+
+      <section class="policy-section" id="eligibility">
+        <h2>03. Eligibility</h2>
+        <p>
+          You must have the legal capacity to enter into
+          a binding agreement under applicable Indian law
+          to use Wrinklit independently.
+        </p>
+        <p>
+          Individuals who are not legally competent to
+          contract may use the services only through an
+          eligible parent, guardian or authorised representative
+          where permitted by law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="services">
+        <h2>04. Our Services</h2>
+        <p>
+          Wrinklit provides access to garment ironing,
+          pressing and related garment-care services,
+          depending on availability in the user's location.
+        </p>
+
+        <p>Our services may include:</p>
+
+        <ul>
+          <li>Instant or on-demand garment pickup.</li>
+          <li>Scheduled pickup and delivery.</li>
+          <li>Ironing and pressing of eligible garments.</li>
+          <li>Garment handling and packaging.</li>
+          <li>Other garment-care services introduced on the platform.</li>
+        </ul>
+
+        <p>
+          The availability, scope and estimated completion
+          time of each service will be displayed or communicated
+          during the booking process.
+        </p>
+
+        <p>
+          Services may vary depending on location, operational
+          capacity, garment type and partner availability.
+        </p>
+      </section>
+
+      <section class="policy-section" id="account">
+        <h2>05. User Accounts</h2>
+        <p>
+          Certain features may require you to create an account
+          or provide contact information.
+        </p>
+
+        <p>You agree to:</p>
+
+        <ul>
+          <li>Provide accurate and complete information.</li>
+          <li>Keep your login credentials confidential.</li>
+          <li>Maintain the security of your account.</li>
+          <li>Inform us if you suspect unauthorised account access.</li>
+          <li>Not impersonate another individual or create fraudulent accounts.</li>
+        </ul>
+
+        <p>
+          You are responsible for activities carried out
+          through your account, except where applicable law
+          provides otherwise.
+        </p>
+      </section>
+
+      <section class="policy-section" id="booking">
+        <h2>06. Booking and Order Confirmation</h2>
+        <p>
+          Customers can place orders through the Wrinklit
+          website or other authorised booking channels.
+        </p>
+
+        <p>
+          When placing an order, you may be required to
+          provide:
+        </p>
+
+        <ul>
+          <li>Your name and contact details.</li>
+          <li>Pickup and delivery address.</li>
+          <li>Garment quantity and service preferences.</li>
+          <li>Pickup time or selected service slot.</li>
+          <li>Any relevant service instructions.</li>
+        </ul>
+
+        <p>
+          An order is subject to confirmation by Wrinklit
+          and the availability of the requested service.
+        </p>
+
+        <p>
+          We may contact you to clarify order details,
+          resolve address issues or confirm garment quantities.
+        </p>
+
+        <p>
+          If an order cannot be fulfilled, we will inform
+          you and process any applicable refund in accordance
+          with our refund policy and applicable law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="pricing">
+        <h2>07. Pricing, Fees and Payments</h2>
+        <p>
+          Service prices, applicable delivery charges,
+          minimum order values, discounts and other fees
+          will be displayed during the booking process.
+        </p>
+
+        <ul>
+          <li>Prices may vary depending on garment category and service type.</li>
+          <li>Delivery charges may apply depending on the order and location.</li>
+          <li>Minimum order values may apply to certain services or offers.</li>
+          <li>Applicable taxes will be displayed or charged as required by law.</li>
+          <li>Promotional discounts are subject to their individual conditions.</li>
+        </ul>
+
+        <p>
+          Payments may be accepted through available online
+          payment methods, including UPI, cards and other
+          supported payment gateways.
+        </p>
+
+        <p>
+          Orders may also support cash or other payment
+          methods if specifically enabled on the platform.
+        </p>
+
+        <p>
+          Wrinklit does not request your UPI PIN, card PIN
+          or banking password for processing a payment.
+        </p>
+
+        <p>
+          All prices applicable to a confirmed order will
+          be governed by the amount displayed and accepted
+          at checkout, subject to correction of genuine
+          errors and applicable law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="pickup">
+        <h2>08. Pickup and Delivery</h2>
+        <p>
+          Wrinklit aims to provide convenient garment pickup
+          and return delivery within the estimated time
+          communicated at the time of booking.
+        </p>
+
+        <p>
+          Estimated service times are indicative and may
+          change due to operational conditions.
+        </p>
+
+        <p>Delays may occur due to:</p>
+
+        <ul>
+          <li>Traffic and transportation conditions.</li>
+          <li>Weather or other unexpected circumstances.</li>
+          <li>Incorrect or incomplete address information.</li>
+          <li>Customer unavailability at pickup or delivery.</li>
+          <li>Unexpected operational or vendor delays.</li>
+          <li>Safety, security or access restrictions at premises.</li>
+        </ul>
+
+        <p>
+          Customers should ensure that garments are ready
+          for collection and that someone is available to
+          receive the returned garments.
+        </p>
+
+        <p>
+          Any delivery attempt, revised schedule or
+          additional charge will be communicated where
+          reasonably possible.
+        </p>
+      </section>
+
+      <section class="policy-section" id="garments">
+        <h2>09. Garment Handling and Responsibility</h2>
+        <p>
+          Customers must provide garments that are suitable
+          for the selected ironing or pressing service.
+        </p>
+
+        <p>
+          Customers are responsible for checking garment
+          pockets and removing personal belongings, money,
+          jewellery, documents and other valuables before
+          handing over garments.
+        </p>
+
+        <p>
+          Customers should disclose any special care
+          instructions, delicate fabrics, existing stains,
+          tears, loose buttons, colour-transfer risks or
+          pre-existing damage before the service begins.
+        </p>
+
+        <p>
+          Certain fabrics, embellishments, prints, coatings
+          and delicate materials may require special handling
+          or may be unsuitable for ordinary ironing.
+        </p>
+
+        <p>
+          Wrinklit may refuse or seek clarification before
+          processing garments that appear unsuitable or
+          require specialised treatment.
+        </p>
+
+        <p>
+          Ironing and pressing do not guarantee removal
+          of existing stains, permanent creases, fabric
+          defects or previous damage.
+        </p>
+
+        <p>
+          We will take reasonable care while handling
+          garments. If a garment is lost, damaged or
+          mishandled while in our custody or that of an
+          authorised service partner, customers may contact
+          us for investigation and an appropriate remedy
+          under applicable law.
+        </p>
+
+        <div class="highlight">
+          Important: Please check your garments before
+          handing them over. Remove all valuables and
+          disclose special fabric-care instructions.
+        </div>
+      </section>
+
+      <section class="policy-section" id="cancellation">
+        <h2>10. Cancellation Policy</h2>
+        <p>
+          Customers may request cancellation of an order
+          through the available platform options or customer
+          support.
+        </p>
+
+        <p>
+          Cancellation eligibility may depend on the
+          operational stage of the order.
+        </p>
+
+        <ul>
+          <li>Orders cancelled before pickup or service commencement may generally be eligible for cancellation without a service charge.</li>
+          <li>Orders already picked up or actively being processed may require individual assessment.</li>
+          <li>Any applicable cancellation or service charge must be disclosed before it is imposed.</li>
+          <li>Orders cancelled by Wrinklit will be handled with appropriate refunds for amounts paid for services not provided.</li>
+        </ul>
+
+        <p>
+          No cancellation term will exclude any mandatory
+          consumer rights available under applicable law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="refund">
+        <h2>11. Refund Policy</h2>
+        <p>
+          Refunds may be considered in situations including:
+        </p>
+
+        <ul>
+          <li>Payment deducted but order not successfully confirmed.</li>
+          <li>Order cancelled by Wrinklit before service fulfilment.</li>
+          <li>Duplicate or incorrect payments.</li>
+          <li>Eligible cancellations under our cancellation policy.</li>
+          <li>Eligible service failures or other valid complaints.</li>
+        </ul>
+
+        <p>
+          Refund requests will be reviewed based on the
+          order details, payment records and circumstances
+          of the complaint.
+        </p>
+
+        <p>
+          Approved refunds will generally be initiated
+          through the original payment method or another
+          mutually appropriate method, subject to payment
+          provider procedures.
+        </p>
+
+        <p>
+          Actual credit timelines may depend on banks,
+          payment gateways and financial institutions.
+        </p>
+
+        <p>
+          This policy does not restrict statutory refund
+          or compensation rights available to consumers.
+        </p>
+      </section>
+
+      <section class="policy-section" id="customer">
+        <h2>12. Customer Responsibilities</h2>
+        <p>By using Wrinklit, you agree to:</p>
+
+        <ul>
+          <li>Provide accurate personal and address information.</li>
+          <li>Provide garments suitable for the selected service.</li>
+          <li>Remove valuables and personal belongings from garment pockets.</li>
+          <li>Provide correct pickup and delivery instructions.</li>
+          <li>Be available or arrange an authorised person for handover.</li>
+          <li>Make payments for confirmed services.</li>
+          <li>Use the platform lawfully and responsibly.</li>
+          <li>Communicate any service-related issue honestly.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="partners">
+        <h2>13. Service Partners and Vendors</h2>
+        <p>
+          Wrinklit may work with independent ironing
+          professionals, garment-care vendors, delivery
+          partners and other operational service providers.
+        </p>
+
+        <p>
+          Such partners may assist with pickup, garment
+          handling, ironing, processing, packaging and
+          delivery.
+        </p>
+
+        <p>
+          RailQuick Private Limited will take reasonable
+          steps to coordinate service fulfilment and
+          address customer complaints involving authorised
+          service partners.
+        </p>
+
+        <p>
+          The use of a service partner does not remove
+          any responsibility or consumer obligation that
+          RailQuick Private Limited has under applicable law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="prohibited">
+        <h2>14. Prohibited Activities</h2>
+        <p>You must not:</p>
+
+        <ul>
+          <li>Use Wrinklit for fraudulent or unlawful activities.</li>
+          <li>Provide false or misleading booking information.</li>
+          <li>Attempt unauthorised access to our systems.</li>
+          <li>Interfere with website functionality or security.</li>
+          <li>Upload malicious code or harmful content.</li>
+          <li>Misuse promotional offers or payment mechanisms.</li>
+          <li>Harass, threaten or abuse service personnel or other users.</li>
+          <li>Copy or misuse our brand, content or intellectual property.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="ip">
+        <h2>15. Intellectual Property</h2>
+        <p>
+          The Wrinklit brand, logo, website design, visual
+          identity, graphics, software, text, content,
+          trademarks and other platform materials are owned
+          by or licensed to RailQuick Private Limited.
+        </p>
+
+        <p>
+          You may not reproduce, distribute, modify,
+          commercially exploit or use our intellectual
+          property without prior written permission,
+          except where permitted by law.
+        </p>
+
+        <p>
+          All rights not expressly granted are reserved.
+        </p>
+      </section>
+
+      <section class="policy-section" id="liability">
+        <h2>16. Limitation of Liability</h2>
+        <p>
+          Wrinklit aims to provide reliable services and
+          takes reasonable steps to maintain service quality.
+        </p>
+
+        <p>
+          However, to the extent permitted by applicable
+          law, RailQuick Private Limited shall not be
+          responsible for losses arising solely from:
+        </p>
+
+        <ul>
+          <li>Incorrect or incomplete information supplied by customers.</li>
+          <li>Customer failure to disclose known garment defects or special care requirements.</li>
+          <li>Customer failure to remove valuables from garments.</li>
+          <li>Unauthorised access resulting from compromised customer credentials, where not attributable to our failure of reasonable safeguards.</li>
+          <li>Events outside our reasonable control.</li>
+        </ul>
+
+        <p>
+          Nothing in these Terms excludes or limits
+          liability for fraud, wilful misconduct, negligence
+          where liability cannot legally be excluded,
+          statutory consumer rights, or any other liability
+          that cannot be limited under applicable law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="indemnity">
+        <h2>17. Indemnification</h2>
+        <p>
+          You agree to be responsible for losses, claims
+          or expenses arising directly from your unlawful
+          use of Wrinklit, fraudulent conduct or material
+          breach of these Terms.
+        </p>
+
+        <p>
+          This provision applies only to the extent permitted
+          by applicable law and does not remove any
+          non-excludable consumer rights.
+        </p>
+      </section>
+
+      <section class="policy-section" id="termination">
+        <h2>18. Suspension and Termination</h2>
+        <p>
+          We may restrict or suspend access to certain
+          features or accounts where reasonably necessary
+          to address fraud, security threats, unlawful
+          activities or serious violations of these Terms.
+        </p>
+
+        <p>
+          Where reasonably practicable, we will communicate
+          the reason for such action.
+        </p>
+
+        <p>
+          Termination or suspension will not affect
+          obligations or rights that have already accrued
+          or any consumer rights protected by law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="force">
+        <h2>19. Force Majeure</h2>
+        <p>
+          We will not be responsible for delays caused
+          by events beyond our reasonable control, including
+          natural disasters, extreme weather, strikes,
+          government restrictions, public emergencies,
+          major infrastructure failures or widespread
+          technology disruptions.
+        </p>
+
+        <p>
+          We will make reasonable efforts to inform affected
+          customers and address pending orders appropriately.
+        </p>
+      </section>
+
+      <section class="policy-section" id="law">
+        <h2>20. Governing Law and Dispute Resolution</h2>
+        <p>
+          These Terms shall be governed by the laws of India.
+        </p>
+
+        <p>
+          If you have a concern or dispute, we encourage
+          you to contact our customer support team first
+          so that we can attempt to resolve it promptly.
+        </p>
+
+        <p>
+          Nothing in these Terms prevents a consumer from
+          approaching an appropriate Consumer Commission
+          or other competent authority under applicable law.
+        </p>
+
+        <p>
+          Subject to applicable law and statutory consumer
+          jurisdiction, courts having competent jurisdiction
+          in India shall have jurisdiction over disputes
+          arising from these Terms.
+        </p>
+      </section>
+
+      <section class="policy-section" id="changes">
+        <h2>21. Changes to These Terms</h2>
+        <p>
+          RailQuick Private Limited reserves the right
+          to revise these Terms when necessary to reflect
+          changes in services, operations, technology or
+          applicable legal requirements.
+        </p>
+
+        <p>
+          Updated Terms will be published on the Wrinklit
+          website with a revised effective date.
+        </p>
+
+        <p>
+          Your continued use of the platform after an
+          update does not remove any consent or notice
+          requirements imposed by applicable law.
+        </p>
+      </section>
+
+      <section class="policy-section" id="contact">
+        <h2>22. Contact and Customer Support</h2>
+        <p>
+          For questions, complaints, service-related
+          concerns or clarification regarding these Terms,
+          please contact us.
+        </p>
+
+        <div class="contact-card">
+          <h3>Wrinklit</h3>
+
+          <p><strong>Legal Entity:</strong> RailQuick Private Limited</p>
+          <p><strong>Brand:</strong> Wrinklit</p>
+          <p><strong>Country:</strong> India</p>
+
+          <p><strong>Email:</strong>
+            <a href="mailto:privacy@wrinklit.in">
+              privacy@wrinklit.in
+            </a>
+          </p>
+
+          <p><strong>Website:</strong>
+            <a href="https://wrinklit.in">
+              www.wrinklit.in
+            </a>
+          </p>
+
+          <p style="margin-top:12px;font-size:12px;">
+            Replace this email with your official customer
+            support or grievance email if different.
+          </p>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <h2>23. Entire Agreement</h2>
+        <p>
+          These Terms, together with the Privacy Policy
+          and other applicable policies displayed on the
+          Wrinklit platform, constitute the terms governing
+          your use of our services.
+        </p>
+
+        <p>
+          If any provision is found unenforceable,
+          the remaining provisions will continue to
+          apply to the extent legally permissible.
+        </p>
+
+        <p>
+          © <span id="year">2026</span>
+          RailQuick Private Limited. All Rights Reserved.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">wrinklit.</div>
+
+    <p>Premium garment care, made convenient.</p>
+
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/terms">Terms & Conditions</a>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
+
+    <p>
+      Owned and Operated by RailQuick Private Limited
+    </p>
+
+    <p>
+      © <span id="footerYear">2026</span> All Rights Reserved.
+    </p>
+  </footer>
+
+  <script>
+    // Dynamic copyright year
+    const year = new Date().getFullYear();
+
+    document.getElementById("year").textContent = year;
+    document.getElementById("footerYear").textContent = year;
+
+    // Smooth navigation
+    document.querySelectorAll(".sidebar a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        const target = document.querySelector(
+          this.getAttribute("href")
+        );
+
+        if (target) {
+          e.preventDefault();
+
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+          history.replaceState(
+            null,
+            "",
+            this.getAttribute("href")
+          );
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
