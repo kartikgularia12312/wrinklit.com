@@ -1,7 +1,10 @@
 const currentYear = new Date().getFullYear();
 
-document.getElementById("year").textContent = currentYear;
-document.getElementById("footerYear").textContent = currentYear;
+const yearElement = document.getElementById("year");
+const footerYearElement = document.getElementById("footerYear");
+
+if (yearElement) yearElement.textContent = currentYear;
+if (footerYearElement) footerYearElement.textContent = currentYear;
 
 document.querySelectorAll(".sidebar a").forEach(link => {
   link.addEventListener("click", function(e) {
