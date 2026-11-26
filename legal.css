@@ -1,0 +1,267 @@
+:root {
+      --primary: #e53935;
+      --dark: #191919;
+      --muted: #737373;
+      --bg: #fafafa;
+      --white: #ffffff;
+      --border: #eeeeee;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .navbar {
+      height: 75px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8%;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      color: var(--primary);
+    }
+
+    .back-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .hero {
+      background: #fff1f0;
+      padding: 75px 20px 65px;
+      text-align: center;
+    }
+
+    .hero-label {
+      display: inline-block;
+      color: var(--primary);
+      background: white;
+      padding: 7px 17px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 55px);
+      font-weight: 850;
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: auto;
+      color: #666;
+      font-size: 15px;
+    }
+
+    .updated {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 55px auto;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 245px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 23px;
+      position: sticky;
+      top: 25px;
+    }
+
+    .sidebar h3 {
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #666;
+      font-size: 13px;
+      padding: 8px 0;
+      transition: .2s;
+    }
+
+    .sidebar a:hover {
+      color: var(--primary);
+      transform: translateX(3px);
+    }
+
+    .content {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 45px;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: #555;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .policy-section {
+      padding: 29px 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 25px;
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+
+    .policy-section h2 {
+      font-size: 21px;
+      letter-spacing: -.5px;
+      margin-bottom: 13px;
+    }
+
+    .policy-section p {
+      font-size: 14px;
+      color: #606060;
+      margin-bottom: 12px;
+    }
+
+    .policy-section ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
+    .policy-section li {
+      font-size: 14px;
+      color: #606060;
+      margin-bottom: 9px;
+    }
+
+    .highlight {
+      background: #fff4f3;
+      border-left: 3px solid var(--primary);
+      padding: 18px;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-card {
+      background: #191919;
+      color: white;
+      padding: 28px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: #ccc;
+    }
+
+    .contact-card a {
+      color: #ff7772;
+    }
+
+    .footer {
+      background: #191919;
+      color: white;
+      padding: 40px 8%;
+      text-align: center;
+    }
+
+    .footer .logo {
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      color: #aaa;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    @media(max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+        margin: 25px auto;
+        gap: 20px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .sidebar nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 12px;
+      }
+
+      .content {
+        padding: 25px 20px;
+      }
+
+      .navbar {
+        padding: 0 20px;
+      }
+
+      .hero {
+        padding: 55px 20px;
+      }
+    }
+
+    @media print {
+      .navbar, .sidebar, .footer {
+        display: none;
+      }
+
+      .container {
+        display: block;
+        margin: 0;
+      }
+
+      .content {
+        border: none;
+      }
+    }
